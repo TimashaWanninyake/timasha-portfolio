@@ -6,7 +6,6 @@ const Navbar = () => {
                   <li><a href="#Home" className="hover:text-gray-400 pl-6">Home</a></li>
                   <li><a href="#About" className="hover:text-gray-400 pl-6">About</a></li>
                   <li><a href="#Projects" className="hover:text-gray-400 pl-6">Projects</a></li>
-                  <li><a href="#Contact" className="hover:text-gray-400 pl-6">Contact</a></li>
               </ul>
           </div>
       </div>
