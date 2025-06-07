@@ -20,10 +20,10 @@ const Sidebar = () => {
         <a href="mailto:timashawanninayaka26@gmail.com">
           <BsEnvelopeFill size="25" color="#343434" />
         </a>
-        <a href="https://wa.me/your-phone-number" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.me/+94742791417" target="_blank" rel="noopener noreferrer">
           <RiWhatsappFill size="29" color="#343434" />
         </a>
-        <a href="tel:+123456789">
+        <a href="tel:+94742791417">
           <BsFillTelephoneFill size="25" color="#343434" />
         </a>
       </ul>

@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import myImage from "./assets/myImg.png"
 import { BsArrowUpRight } from "react-icons/bs";
+import cv from "./assets/Files/Timasha Wanninayaka.pdf";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "./variants";
@@ -17,7 +18,7 @@ const Home = () => {
         <div className="pt-30 pl-15 bg-[#ffffff] text-[#343434] h-screen">
           <div className="flex justify-center items-center">
             <motion.div
-              variants={fadeIn("up", 0.5)} // Direction: "up", Delay: 0.5s
+              variants={fadeIn("up", 0.5)}
               initial="hidden"
               animate="show"
               className="flex-1 ml-40 mt-20">
@@ -35,7 +36,11 @@ const Home = () => {
                 <a href="#Projects" className="py-3 px-7 bg-gradient-to-r from-[#d60505] to-[#FF6347]  text-white text-[20px] rounded-lg">
                   see my work
                 </a>
-                <a href="" className="flex items-center py-3.5 px-6 text-[#ce4646] text-[20px] rounded-lg">
+                <a
+                  href={cv}
+                  download="Timasha Wanninayaka.pdf"
+                  className="flex items-center py-3.5 px-6 text-[#ce4646] text-[20px] rounded-lg"
+                >
                   View Full Resume <BsArrowUpRight size="15" color="#ce4646" className="ml-2" />
                 </a>
               </div>

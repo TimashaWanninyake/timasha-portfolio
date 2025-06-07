@@ -43,7 +43,7 @@ const Cube = () => {
   }, []);
 
   return (
-    <div className="ml-40 mt-50 w-80 h-80" style={{ 
+    <div className="ml-40 mt-50 w-80 h-80" style={{
       perspective: '1000px',
       position: 'relative',
       transformStyle: 'preserve-3d'
@@ -94,7 +94,12 @@ const Cube = () => {
             boxShadow: '0 0 20px rgba(0,0,0,0.1)'
           }}
         >
-          <img src={cubeImages[2]} alt="Right" className="w-[600px] h-[600px] object-contain" />
+          <img 
+            src={cubeImages[2]} 
+            alt="Right" 
+            className="w-[600px] h-[600px] object-contain scale-150"  // Scales to 75% size
+            style={{ transform: 'scale(0.75)' }}  // Alternative inline style
+          />
         </div>
         
         {/* Left Face */}
@@ -142,13 +147,14 @@ const Cube = () => {
 
 const About = () => {
   return (
-    <div className="flex bg-white mb-19">
+    <div className="flex bg-white">
       <div className="flex-1 pl-13 flex">
         <div className="flex-1 flex flex-col ml-30">
+          <h1 className="text-[45px] font-inter font-medium text-[#525151] ml-13 pt-11">This is me</h1>
           <Cube />
         </div>
 
-        <div className="flex-1 mt-13 text-[#343434] font-inter -ml-35 mr-24">
+        <div className="flex-1 mt-15 mb-18 text-[#525151] font-inter -ml-35 mr-24">
           <h1 className="text-[32px]">Full-Stack Developer | UI/UX Explorer | Data Science Enthusiast </h1><br />
           <p className="text-[22px] mb-7">
             I am a full-stack developer and computer science undergraduate with a
