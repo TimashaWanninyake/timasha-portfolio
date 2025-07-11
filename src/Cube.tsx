@@ -57,7 +57,7 @@ const Cube = () => {
           height: '100%'
         }}
       >
-        {/* Front Face */}
+        {/* Front Face - data science logo*/}
         <div
           className="absolute w-full h-full flex items-center justify-center bg-white overflow-hidden"
           style={{
@@ -67,10 +67,15 @@ const Cube = () => {
             boxShadow: '0 0 20px rgba(0,0,0,0.1)'
           }}
         >
-          <img src={cubeImages[0]} alt="Front" className="w-[600px] h-[600px] object-contain" />
+          <img 
+            src={cubeImages[0]} 
+            alt="Top" 
+            className="w-[600px] h-[600px] object-contain scale-150"
+            style={{ transform: 'scale(0.75)' }} 
+          />
         </div>
         
-        {/* Back Face */}
+        {/* Back Face - data science*/}
         <div 
           className="absolute w-full h-full flex items-center justify-center bg-white overflow-hidden"
           style={{ 
@@ -80,10 +85,15 @@ const Cube = () => {
             boxShadow: '0 0 20px rgba(0,0,0,0.1)'
           }}
         >
-          <img src={cubeImages[1]} alt="Back" className="w-[600px] h-[600px] object-contain" />
+          <img 
+            src={cubeImages[1]} 
+            alt="Back" 
+            className="w-[600px] h-[600px] object-contain scale-140"
+            style={{ transform: 'scale(0.75)' }} 
+          />
         </div>
         
-        {/* Right Face */}
+        {/* Right Face - programming languages*/}
         <div 
           className="absolute w-full h-full flex items-center justify-center bg-white overflow-hidden"
           style={{ 
@@ -96,12 +106,12 @@ const Cube = () => {
           <img 
             src={cubeImages[2]} 
             alt="Right" 
-            className="w-[600px] h-[600px] object-contain scale-150"  // Scales to 75% size
-            style={{ transform: 'scale(0.75)' }}  // Alternative inline style
+            className="w-[600px] h-[600px] object-contain scale-250"
+            style={{ transform: 'scale(0.75)' }}
           />
         </div>
         
-        {/* Left Face */}
+        {/* Left Face - frontend*/}
         <div 
           className="absolute w-full h-full flex items-center justify-center bg-white overflow-hidden"
           style={{ 
@@ -111,10 +121,15 @@ const Cube = () => {
             boxShadow: '0 0 20px rgba(0,0,0,0.1)'
           }}
         >
-          <img src={cubeImages[3]} alt="Left" className="w-[600px] h-[600px] object-contain" />
+          <img 
+            src={cubeImages[3]} 
+            alt="Left" 
+            className="w-[600px] h-[600px] object-contain scale-180"
+            style={{ transform: 'scale(0.75)' }} 
+          />
         </div>
         
-        {/* Top Face */}
+        {/* Top Face - MySQL */}
         <div 
           className="absolute w-full h-full flex items-center justify-center bg-white overflow-hidden"
           style={{ 
@@ -124,10 +139,15 @@ const Cube = () => {
             boxShadow: '0 0 20px rgba(0,0,0,0.1)'
           }}
         >
-          <img src={cubeImages[4]} alt="Top" className="w-[600px] h-[600px] object-contain" />
+          <img 
+            src={cubeImages[4]} 
+            alt="Top" 
+            className="w-[600px] h-[600px] object-contain scale-150"
+            style={{ transform: 'scale(0.75)' }} 
+          />
         </div>
         
-        {/* Bottom Face */}
+        {/* Bottom Face - Spring Boot*/}
         <div 
           className="absolute w-full h-full flex items-center justify-center bg-white overflow-hidden"
           style={{ 
@@ -137,7 +157,12 @@ const Cube = () => {
             boxShadow: '0 0 20px rgba(0,0,0,0.1)'
           }}
         >
-          <img src={cubeImages[5]} alt="Bottom" className="w-[600px] h-[600px] object-contain" />
+          <img 
+            src={cubeImages[5]} 
+            alt="Bottom" 
+            className="w-[600px] h-[600px] object-contain scale-150"
+            style={{ transform: 'scale(0.75)' }} 
+          />
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ import { fadeIn } from "./variants";
 
 const Home = () => {
   return (
-    <div className="flex">
+    <div className="flex" id="Home">
       <Sidebar />
 
       <div className="flex-1">
