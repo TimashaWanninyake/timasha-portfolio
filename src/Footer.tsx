@@ -6,7 +6,7 @@ const Footer = () => {
           Crafted with
           <span className="font-medium"> React.js</span> &
           <span className="font-medium"> Tailwind CSS</span>, and deployed on
-          <span className="font-medium"> Github</span>
+          <span className="font-medium"> Vercel</span>
         </p>
         <p className="mt-1">By Timasha Wanninayaka</p>
     </div>
