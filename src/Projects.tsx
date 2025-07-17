@@ -1,8 +1,8 @@
 import { FiGithub } from "react-icons/fi";
-import elephantVideo from "./assets/projects/JAVA_2.mp4";
-import EMSVideo from "./assets/projects/EMS.gif";
-import weatherImage from "./assets/projects/JAVA_1.jpg";
-import uniJobsImage from "./assets/projects/uniJobs.png";
+import elephantVideo from '../public/JAVA_2.mp4'
+import EMSVideo from '../public/EMS.gif'
+import weatherImage from '../public/JAVA_1.jpg'
+import uniJobsImage from '../public/uniJobs.png'
 
 type Project = {
   id: number;

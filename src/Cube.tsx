@@ -1,11 +1,11 @@
 import { useEffect, useRef } from 'react';
 
-import frontImage from './assets/DataScienceLogo.png';
-import backImage from './assets/dataScience.png';
-import rightImage from './assets/ProgrammingLanguages.jpg';
-import leftImage from './assets/frontend.jpg';
-import topImage from './assets/mySQL.png';
-import bottomImage from './assets/springBoot.png';
+import frontImage from '../public/DataScienceLogo.png'
+import backImage from '../public/DataScience.png'
+import rightImage from '../public/ProgrammingLanguages.jpg'
+import leftImage from '../public/frontend.jpg'
+import topImage from  '../public/mySQL.png'
+import bottomImage from '../public/springBoot.png'
 
 const Cube = () => {
   const cubeRef = useRef<HTMLDivElement>(null);

@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import myImage from "../public/myimg.png"
 import { BsArrowUpRight } from "react-icons/bs";
-import cv from "./assets/Files/Timasha Wanninayaka.pdf";
+import cv from '../public/Timasha Wanninayaka.pdf'
 
 import { motion } from "framer-motion";
 import { fadeIn } from "./variants";
