@@ -46,11 +46,11 @@ const Home = () => {
               </div>
 
             </motion.div>
-            <div className="flex-1 ml-0 lg:ml-10 mt-8 lg:mt-0 flex justify-center">
+            <div className="flex-1 ml-0 lg:ml-10 mt-12 lg:mt-8 xl:mt-16 flex justify-center">
               <img
                 src={myImage}
                 alt="Timasha Wanninayaka"
-                className="w-[200px] h-[200px] md:w-[260px] md:h-[260px] lg:w-[280px] lg:h-[280px] xl:w-[500px] xl:h-[500px] rounded-full object-cover"
+                className="w-[200px] h-[200px] md:w-[260px] md:h-[260px] lg:w-[280px] lg:h-[280px] xl:w-[350px] xl:h-[350px] rounded-full object-cover"
               />
             </div>
           </div>

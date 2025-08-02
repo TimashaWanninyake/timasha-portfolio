@@ -13,7 +13,25 @@ const About = () => {
           </div>
 
           <div className="flex-1 mt-8 lg:mt-15 mb-8 lg:mb-18 text-[#e7e7e7e4] font-inter font-normal -ml-2 md:-ml-4 lg:-ml-20 mr-4 md:mr-6 lg:mr-24 px-4 md:px-6">
-            <h1 className="text-base md:text-xl lg:text-xl xl:text-2xl leading-relaxed">Full-Stack <span className="bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent">Developer</span> | UI/UX Explorer | <span className="bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent">Data Science Enthusiast </span></h1><br />
+            {/* Mobile Layout - Line by Line */}
+            <div className="block md:hidden">
+              <h1 className="text-base leading-relaxed">
+                <span className="bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent">Full-Stack Developer</span><br />
+                <span className="bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent">UI/UX Explorer</span><br />
+                <span className="bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent">Data Science Enthusiast</span>
+              </h1><br />
+            </div>
+            
+            {/* Desktop Layout - with special handling for 1024px+ */}
+            <div className="hidden md:block">
+              <h1 className="md:text-xl lg:text-xl xl:text-2xl leading-relaxed">
+                Full-Stack <span className="bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent">Developer</span> | UI/UX Explorer | 
+                <span className="lg:block lg:mt-2">
+                  <span className="bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent">Data Science Enthusiast</span>
+                </span>
+              </h1><br />
+            </div>
+            
             <p className="text-sm md:text-base lg:text-base xl:text-lg mb-7 leading-relaxed">
               I am a full-stack developer and computer science undergraduate with a
               passion for creating exceptional web experience.<br/><br/> I have a strong
