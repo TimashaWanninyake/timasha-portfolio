@@ -6,7 +6,7 @@ const About = () => {
       <div className="flex-1 ml-0 lg:ml-[70px] xl:ml-[100px]">
         <div className="flex-1 pl-4 md:pl-6 lg:pl-12 flex flex-col lg:flex-row">
           <div className="flex-1 flex flex-col ml-0 md:ml-2 lg:ml-8">
-            <p className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-inter font-medium text-[#e7e7e7e4] ml-2 md:ml-4 lg:ml-8 pt-11">About me</p>
+            <p className="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-inter font-medium text-[#e7e7e7e4] ml-2 md:ml-4 lg:ml-8 pt-11">About me</p>
             <div className="hidden lg:block">
               <Cube />
             </div>
@@ -24,7 +24,7 @@ const About = () => {
             
             {/* Desktop Layout - with special handling for 1024px+ */}
             <div className="hidden md:block">
-              <h1 className="md:text-xl lg:text-xl xl:text-2xl leading-relaxed">
+              <h1 className="md:text-xl lg:text-xl xl:text-2xl 2xl:text-4xl leading-relaxed">
                 Full-Stack <span className="bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent">Developer</span> | UI/UX Explorer | 
                 <span className="lg:block lg:mt-2">
                   <span className="bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent">Data Science Enthusiast</span>
@@ -32,7 +32,7 @@ const About = () => {
               </h1><br />
             </div>
             
-            <p className="text-sm md:text-base lg:text-base xl:text-lg mb-7 leading-relaxed">
+            <p className="text-sm md:text-base lg:text-base xl:text-lg 2xl:text-2xl mb-7 leading-relaxed">
               I am a full-stack developer and computer science undergraduate with a
               passion for creating exceptional web experience.<br/><br/> I have a strong
               foundation in both front-end and back-end development, and I am always
@@ -43,14 +43,14 @@ const About = () => {
               as an opportunity to push boundaries and grow.
             </p><br />
 
-            <h3 className="text-base md:text-xl lg:text-xl xl:text-2xl mb-8">Tech I familiar with,</h3>
+            <h3 className="text-base md:text-xl lg:text-xl xl:text-2xl 2xl:text-4xl mb-8">Tech I familiar with,</h3>
             <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-xl p-6 md:p-8 border border-[#ce4646]/30">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
                 
                 {/* Frontend */}
                 <div className="text-center group">
-                  <h4 className="text-sm md:text-base font-semibold bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent mb-3">Frontend</h4>
-                  <div className="space-y-2 text-xs md:text-sm text-[#e7e7e7e4]">
+                  <h4 className="text-sm md:text-base 2xl:text-xl font-semibold bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent mb-3">Frontend</h4>
+                  <div className="space-y-2 text-xs md:text-sm 2xl:text-lg text-[#e7e7e7e4]">
                     <div className="hover:text-[#ce4646] transition-colors cursor-pointer">React</div>
                     <div className="hover:text-[#ce4646] transition-colors cursor-pointer">TypeScript</div>
                     <div className="hover:text-[#ce4646] transition-colors cursor-pointer">Tailwind CSS</div>
@@ -60,8 +60,8 @@ const About = () => {
 
                 {/* Backend */}
                 <div className="text-center group">
-                  <h4 className="text-sm md:text-base font-semibold bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent mb-3">Backend</h4>
-                  <div className="space-y-2 text-xs md:text-sm text-[#e7e7e7e4]">
+                  <h4 className="text-sm md:text-base 2xl:text-xl font-semibold bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent mb-3">Backend</h4>
+                  <div className="space-y-2 text-xs md:text-sm 2xl:text-lg text-[#e7e7e7e4]">
                     <div className="hover:text-[#ce4646] transition-colors cursor-pointer">Spring Boot</div>
                     <div className="hover:text-[#ce4646] transition-colors cursor-pointer">MySQL</div>
                   </div>
@@ -69,8 +69,8 @@ const About = () => {
 
                 {/* Data Science */}
                 <div className="text-center group">
-                  <h4 className="text-sm md:text-base font-semibold bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent mb-3">Data & AI</h4>
-                  <div className="space-y-2 text-xs md:text-sm text-[#e7e7e7e4]">
+                  <h4 className="text-sm md:text-base 2xl:text-xl font-semibold bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent mb-3">Data & AI</h4>
+                  <div className="space-y-2 text-xs md:text-sm 2xl:text-lg text-[#e7e7e7e4]">
                     <div className="hover:text-[#ce4646] transition-colors cursor-pointer">Python</div>
                     <div className="hover:text-[#ce4646] transition-colors cursor-pointer">Pandas</div>
                     <div className="hover:text-[#ce4646] transition-colors cursor-pointer">NumPy</div>
@@ -80,8 +80,8 @@ const About = () => {
 
                 {/* Languages */}
                 <div className="text-center group">
-                  <h4 className="text-sm md:text-base font-semibold bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent mb-3">Languages</h4>
-                  <div className="space-y-2 text-xs md:text-sm text-[#e7e7e7e4]">
+                  <h4 className="text-sm md:text-base 2xl:text-xl font-semibold bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent mb-3">Languages</h4>
+                  <div className="space-y-2 text-xs md:text-sm 2xl:text-lg text-[#e7e7e7e4]">
                     <div className="hover:text-[#ce4646] transition-colors cursor-pointer">Python</div>
                     <div className="hover:text-[#ce4646] transition-colors cursor-pointer">Java</div>
                     <div className="hover:text-[#ce4646] transition-colors cursor-pointer">JavaScript</div>

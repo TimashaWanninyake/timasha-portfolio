@@ -82,7 +82,7 @@ const Projects = () => {
   return (
     <section className="bg-white py-8 px-2 md:px-4 mb-8 lg:mb-20 mt-2 md:mt-2 lg:mt-30 ml-0 lg:ml-[70px] xl:ml-[100px]" id="Projects">
       <div className="ml-2 md:ml-4 lg:ml-20 mr-2 md:mr-4 lg:mr-22">
-        <h1 className="font-inter text-lg md:text-2xl lg:text-4xl font-medium text-[#343434] mb-8 px-2 md:px-4">
+        <h1 className="font-inter text-lg md:text-2xl lg:text-4xl 2xl:text-6xl font-medium text-[#343434] mb-8 px-2 md:px-4">
           Recent Projects
         </h1>
 
@@ -94,10 +94,10 @@ const Projects = () => {
             >
               {/* Project Details */}
               <div className="flex-1 px-2 md:px-4 mb-8 lg:mb-34">
-                <h2 className="text-base md:text-xl lg:text-2xl font-inter text-[#343434] mb-4">
+                <h2 className="text-base md:text-xl lg:text-2xl 2xl:text-4xl font-inter text-[#343434] mb-4">
                   {project.title}
                 </h2>
-                <p className="text-[#343434] text-xs md:text-sm lg:text-base mt-8 mb-4 opacity-90 leading-relaxed">
+                <p className="text-[#343434] text-xs md:text-sm lg:text-base 2xl:text-xl mt-8 mb-4 opacity-90 leading-relaxed">
                   {project.description}
                 </p>
                 
@@ -105,7 +105,7 @@ const Projects = () => {
                   {project.features.map((feature, index) => (
                     <li key={index} className="flex items-start">
                       <span className="text-[#ce4646] mr-2 mt-1 flex-shrink-0">✓</span>
-                      <span className="text-[#343434] text-xs md:text-sm lg:text-base -mb-2">{feature}</span>
+                      <span className="text-[#343434] text-xs md:text-sm lg:text-base 2xl:text-lg -mb-2">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -114,7 +114,7 @@ const Projects = () => {
                   {project.tags.map((tag, index) => (
                     <span 
                       key={index}
-                      className="text-[#ce4646] font-medium text-sm lg:text-base font-inter -ml-2 px-3 py-1 rounded-full"
+                      className="text-[#ce4646] font-medium text-sm lg:text-base 2xl:text-lg font-inter -ml-2 px-3 py-1 rounded-full"
                     >
                       {tag}
                     </span>
@@ -126,7 +126,7 @@ const Projects = () => {
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 font-medium text-white text-sm lg:text-base rounded-lg bg-gradient-to-r from-[#d60505] to-[#FF6347] ml-1 px-4 py-2 hover:shadow-lg transition-shadow"
+                    className="flex items-center gap-3 font-medium text-white text-sm lg:text-base 2xl:text-xl rounded-lg bg-gradient-to-r from-[#d60505] to-[#FF6347] ml-1 px-4 py-2 hover:shadow-lg transition-shadow"
                   >
                     <FiGithub className="text-lg" />
                     <span>View Code</span>

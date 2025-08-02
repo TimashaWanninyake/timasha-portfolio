@@ -16,7 +16,7 @@ const Navbar = () => {
       {/* Desktop Navbar - hidden on mobile */}
       <nav className="fixed top-0 left-0 w-full bg-white z-30 shadow-sm hidden md:block">
         <div className="flex justify-end items-center pr-4 lg:pr-25 pt-4 lg:pt-9 pb-4 lg:pb-7">
-          <ul className="flex space-x-4 lg:space-x-8 font-semibold text-[#343434] font-inter text-xs md:text-sm lg:text-base">
+          <ul className="flex space-x-4 lg:space-x-8 font-semibold text-[#343434] font-inter text-xs md:text-sm lg:text-base 2xl:text-xl">
             <li><a href="#Home" className="hover:text-gray-400 pl-2 lg:pl-6 transition-colors">Home</a></li>
             <li><a href="#About" className="hover:text-gray-400 pl-2 lg:pl-6 transition-colors">About</a></li>
             <li><a href="#Projects" className="hover:text-gray-400 pl-2 lg:pl-6 transition-colors">Projects</a></li>
@@ -49,7 +49,7 @@ const Navbar = () => {
           {/* Menu content */}
           <div className="absolute top-0 right-0 h-full w-64 bg-white shadow-xl transform transition-transform duration-300">
             <div className="pt-20 px-6">
-              <ul className="space-y-6 font-semibold text-[#343434] font-inter text-lg">
+              <ul className="space-y-6 font-semibold text-[#343434] font-inter text-lg 2xl:text-2xl">
                 <li>
                   <a 
                     href="#Home" 
