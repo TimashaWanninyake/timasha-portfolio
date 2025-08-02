@@ -80,55 +80,55 @@ const Projects = () => {
   ];
 
   return (
-    <section className="bg-white py-8 px-2 md:px-4 mb-8 lg:mb-20 2xl:mb-32 4xl:mb-48 mt-2 md:mt-2 lg:mt-30 2xl:mt-40 4xl:mt-56 ml-0 lg:ml-[70px] xl:ml-[100px] 2xl:ml-[140px] 4xl:ml-[180px]" id="Projects">
-      <div className="ml-2 md:ml-4 lg:ml-20 2xl:ml-28 4xl:ml-36 mr-2 md:mr-4 lg:mr-22 2xl:mr-32 4xl:mr-44">
-        <h1 className="font-inter text-lg md:text-2xl lg:text-4xl 2xl:text-5xl 4xl:text-6xl font-medium text-[#343434] mb-8 2xl:mb-12 4xl:mb-16 px-2 md:px-4 2xl:px-6 4xl:px-8">
+    <section className="bg-white py-8 px-2 md:px-4 mb-8 lg:mb-20 mt-2 md:mt-2 lg:mt-30 ml-0 lg:ml-[70px] xl:ml-[100px]" id="Projects">
+      <div className="ml-2 md:ml-4 lg:ml-20 mr-2 md:mr-4 lg:mr-22">
+        <h1 className="font-inter text-lg md:text-2xl lg:text-4xl font-medium text-[#343434] mb-8 px-2 md:px-4">
           Recent Projects
         </h1>
 
-        <div className="space-y-12 lg:space-y-16 2xl:space-y-24 4xl:space-y-32">
+        <div className="space-y-12 lg:space-y-16">
           {projects.map((project) => (
             <div 
               key={project.id}
-              className={`flex flex-col ${project.id % 2 === 1 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 lg:gap-12 2xl:gap-16 4xl:gap-24 items-center`}
+              className={`flex flex-col ${project.id % 2 === 1 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 lg:gap-12 items-center`}
             >
               {/* Project Details */}
-              <div className="flex-1 px-2 md:px-4 2xl:px-6 4xl:px-8 mb-8 lg:mb-34 2xl:mb-44 4xl:mb-56">
-                <h2 className="text-base md:text-xl lg:text-2xl 2xl:text-3xl 4xl:text-4xl font-inter text-[#343434] mb-4 2xl:mb-6 4xl:mb-8">
+              <div className="flex-1 px-2 md:px-4 mb-8 lg:mb-34">
+                <h2 className="text-base md:text-xl lg:text-2xl font-inter text-[#343434] mb-4">
                   {project.title}
                 </h2>
-                <p className="text-[#343434] text-xs md:text-sm lg:text-base 2xl:text-lg 4xl:text-xl mt-8 2xl:mt-12 4xl:mt-16 mb-4 2xl:mb-6 4xl:mb-8 opacity-90 leading-relaxed">
+                <p className="text-[#343434] text-xs md:text-sm lg:text-base mt-8 mb-4 opacity-90 leading-relaxed">
                   {project.description}
                 </p>
                 
-                <ul className="mb-10 2xl:mb-14 4xl:mb-20 space-y-3 2xl:space-y-4 4xl:space-y-6 opacity-90">
+                <ul className="mb-10 space-y-3 opacity-90">
                   {project.features.map((feature, index) => (
                     <li key={index} className="flex items-start">
-                      <span className="text-[#ce4646] mr-2 2xl:mr-3 4xl:mr-4 mt-1 flex-shrink-0 text-sm 2xl:text-base 4xl:text-lg">✓</span>
-                      <span className="text-[#343434] text-xs md:text-sm lg:text-base 2xl:text-lg 4xl:text-xl -mb-2">{feature}</span>
+                      <span className="text-[#ce4646] mr-2 mt-1 flex-shrink-0">✓</span>
+                      <span className="text-[#343434] text-xs md:text-sm lg:text-base -mb-2">{feature}</span>
                     </li>
                   ))}
                 </ul>
                 
-                <div className="flex flex-wrap gap-2 2xl:gap-3 4xl:gap-4 mb-6 2xl:mb-8 4xl:mb-12">
+                <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map((tag, index) => (
                     <span 
                       key={index}
-                      className="text-[#ce4646] font-medium text-sm lg:text-base 2xl:text-lg 4xl:text-xl font-inter -ml-2 px-3 py-1 2xl:px-4 2xl:py-2 4xl:px-6 4xl:py-3 rounded-full"
+                      className="text-[#ce4646] font-medium text-sm lg:text-base font-inter -ml-2 px-3 py-1 rounded-full"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
                 
-                <div className="flex gap-4 2xl:gap-6 4xl:gap-8">
+                <div className="flex gap-4">
                   <a 
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 2xl:gap-4 4xl:gap-5 font-medium text-white text-sm lg:text-base 2xl:text-lg 4xl:text-xl rounded-lg bg-gradient-to-r from-[#d60505] to-[#FF6347] ml-1 px-4 py-2 2xl:px-6 2xl:py-3 4xl:px-8 4xl:py-4 hover:shadow-lg transition-shadow"
+                    className="flex items-center gap-3 font-medium text-white text-sm lg:text-base rounded-lg bg-gradient-to-r from-[#d60505] to-[#FF6347] ml-1 px-4 py-2 hover:shadow-lg transition-shadow"
                   >
-                    <FiGithub className="text-lg 2xl:text-xl 4xl:text-2xl" />
+                    <FiGithub className="text-lg" />
                     <span>View Code</span>
                   </a>
                 </div>

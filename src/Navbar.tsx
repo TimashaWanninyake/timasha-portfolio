@@ -15,12 +15,12 @@ const Navbar = () => {
     <>
       {/* Desktop Navbar - hidden on mobile */}
       <nav className="fixed top-0 left-0 w-full bg-white z-30 shadow-sm hidden md:block">
-        <div className="flex justify-end items-center pr-4 lg:pr-25 2xl:pr-32 4xl:pr-40 pt-4 lg:pt-9 2xl:pt-12 4xl:pt-16 pb-4 lg:pb-7 2xl:pb-10 4xl:pb-12">
-          <ul className="flex space-x-4 lg:space-x-8 2xl:space-x-12 4xl:space-x-16 font-semibold text-[#343434] font-inter text-xs md:text-sm lg:text-base 2xl:text-lg 4xl:text-xl">
-            <li><a href="#Home" className="hover:text-gray-400 pl-2 lg:pl-6 2xl:pl-8 4xl:pl-10 transition-colors">Home</a></li>
-            <li><a href="#About" className="hover:text-gray-400 pl-2 lg:pl-6 2xl:pl-8 4xl:pl-10 transition-colors">About</a></li>
-            <li><a href="#Projects" className="hover:text-gray-400 pl-2 lg:pl-6 2xl:pl-8 4xl:pl-10 transition-colors">Projects</a></li>
-            <li><a href="#Contact" className="hover:text-gray-400 pl-2 lg:pl-6 2xl:pl-8 4xl:pl-10 transition-colors">Contact</a></li>
+        <div className="flex justify-end items-center pr-4 lg:pr-25 pt-4 lg:pt-9 pb-4 lg:pb-7">
+          <ul className="flex space-x-4 lg:space-x-8 font-semibold text-[#343434] font-inter text-xs md:text-sm lg:text-base">
+            <li><a href="#Home" className="hover:text-gray-400 pl-2 lg:pl-6 transition-colors">Home</a></li>
+            <li><a href="#About" className="hover:text-gray-400 pl-2 lg:pl-6 transition-colors">About</a></li>
+            <li><a href="#Projects" className="hover:text-gray-400 pl-2 lg:pl-6 transition-colors">Projects</a></li>
+            <li><a href="#Contact" className="hover:text-gray-400 pl-2 lg:pl-6 transition-colors">Contact</a></li>
           </ul>
         </div>
       </nav>

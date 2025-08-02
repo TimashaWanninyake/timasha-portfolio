@@ -42,7 +42,7 @@ const Cube = () => {
   }, []);
 
   return (
-    <div className="ml-8 md:ml-12 xl:ml-24 2xl:ml-36 4xl:ml-48 mt-28 md:mt-36 xl:mt-48 2xl:mt-60 4xl:mt-80 w-52 h-52 md:w-48 md:h-48 xl:w-64 xl:h-64 2xl:w-80 2xl:h-80 4xl:w-96 4xl:h-96" style={{
+    <div className="ml-8 md:ml-12 xl:ml-24 mt-28 md:mt-36 xl:mt-48 w-52 h-52 md:w-48 md:h-48 xl:w-64 xl:h-64" style={{
       perspective: '1000px',
       position: 'relative',
       transformStyle: 'preserve-3d'
@@ -63,22 +63,6 @@ const Cube = () => {
           .cube-face.left { transform: rotateY(-90deg) translateZ(96px) !important; }
           .cube-face.top { transform: rotateX(90deg) translateZ(96px) !important; }
           .cube-face.bottom { transform: rotateX(-90deg) translateZ(96px) !important; }
-        }
-        @media (min-width: 1536px) and (max-width: 2047px) {
-          .cube-face { transform: rotateY(0deg) translateZ(160px) !important; }
-          .cube-face.back { transform: rotateY(180deg) translateZ(160px) !important; }
-          .cube-face.right { transform: rotateY(90deg) translateZ(160px) !important; }
-          .cube-face.left { transform: rotateY(-90deg) translateZ(160px) !important; }
-          .cube-face.top { transform: rotateX(90deg) translateZ(160px) !important; }
-          .cube-face.bottom { transform: rotateX(-90deg) translateZ(160px) !important; }
-        }
-        @media (min-width: 2048px) {
-          .cube-face { transform: rotateY(0deg) translateZ(192px) !important; }
-          .cube-face.back { transform: rotateY(180deg) translateZ(192px) !important; }
-          .cube-face.right { transform: rotateY(90deg) translateZ(192px) !important; }
-          .cube-face.left { transform: rotateY(-90deg) translateZ(192px) !important; }
-          .cube-face.top { transform: rotateX(90deg) translateZ(192px) !important; }
-          .cube-face.bottom { transform: rotateX(-90deg) translateZ(192px) !important; }
         }
       `}</style>
       <div
