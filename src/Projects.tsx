@@ -24,7 +24,7 @@ const Projects = () => {
       tags: ["React", "TypeScript", "Tailwind CSS", "Spring Boot", "MySQL", "AES"],
       githubLink: "https://github.com/uditha2001/EMS",
       media: EMSVideo,
-      mediaType: "video",
+      mediaType: "image",
       features: [
         "Role-based access control for admins, lecturers, and moderators",
         "Automated grading and result generation to reduce errors and delays",
@@ -80,32 +80,32 @@ const Projects = () => {
   ];
 
   return (
-    <section className="bg-white py-12 px-4 mb-60 mt-30" >
-      <div className="ml-47 mr-22" id="Projects">
-        <h1 className="font-inter text-[45px] font-medium text-[#343434] mb-10 px-4">
+    <section className="bg-white py-8 px-2 md:px-4 mb-8 lg:mb-20 mt-2 md:mt-2 lg:mt-30 ml-0 lg:ml-[70px] xl:ml-[100px]" id="Projects">
+      <div className="ml-2 md:ml-4 lg:ml-20 mr-2 md:mr-4 lg:mr-22">
+        <h1 className="font-inter text-lg md:text-2xl lg:text-4xl font-medium text-[#343434] mb-8 px-2 md:px-4">
           Recent Projects
         </h1>
 
-        <div className="space-y-20">
+        <div className="space-y-12 lg:space-y-16">
           {projects.map((project) => (
             <div 
               key={project.id}
-              className={`flex flex-col ${project.id % 2 === 1 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-12 items-center`}
+              className={`flex flex-col ${project.id % 2 === 1 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 lg:gap-12 items-center`}
             >
               {/* Project Details */}
-              <div className="flex-1 px-4 mb-34 ">
-                <h2 className="text-[32px] font-inter text-[#343434] mb-4">
+              <div className="flex-1 px-2 md:px-4 mb-8 lg:mb-34">
+                <h2 className="text-base md:text-xl lg:text-2xl font-inter text-[#343434] mb-4">
                   {project.title}
                 </h2>
-                <p className="text-[#343434] text-[22px] mt-8 mb-4 opacity-90">
+                <p className="text-[#343434] text-xs md:text-sm lg:text-base mt-8 mb-4 opacity-90 leading-relaxed">
                   {project.description}
                 </p>
                 
-                <ul className="mb-10 space-y-3  opacity-90">
+                <ul className="mb-10 space-y-3 opacity-90">
                   {project.features.map((feature, index) => (
                     <li key={index} className="flex items-start">
-                      <span className="text-[#ce4646] mr-2 mt-1">✓</span>
-                      <span className="text-[#343434] text-[22px] -mb-2">{feature}</span>
+                      <span className="text-[#ce4646] mr-2 mt-1 flex-shrink-0">✓</span>
+                      <span className="text-[#343434] text-xs md:text-sm lg:text-base -mb-2">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -114,19 +114,19 @@ const Projects = () => {
                   {project.tags.map((tag, index) => (
                     <span 
                       key={index}
-                      className="text-[#ce4646] font-medium text-[20px] font-inter -ml-2 px-3 py-1 rounded-full"
+                      className="text-[#ce4646] font-medium text-sm lg:text-base font-inter -ml-2 px-3 py-1 rounded-full"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
                 
-                <div className="flex gap-4 ">
+                <div className="flex gap-4">
                   <a 
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 font-medium  text-white text-[20px] rounded-lg bg-gradient-to-r from-[#d60505] to-[#FF6347] ml-1 px-4 py-2"
+                    className="flex items-center gap-3 font-medium text-white text-sm lg:text-base rounded-lg bg-gradient-to-r from-[#d60505] to-[#FF6347] ml-1 px-4 py-2 hover:shadow-lg transition-shadow"
                   >
                     <FiGithub className="text-lg" />
                     <span>View Code</span>
@@ -153,7 +153,8 @@ const Projects = () => {
                     <img 
                       src={project.media} 
                       alt={project.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain bg-white"
+                      style={{ imageRendering: 'crisp-edges' }}
                     />
                   ) : (
                     <div className="text-center p-8">

@@ -6,3 +6,13 @@
       --font-jacques-francois: "Jacques Francois", serif;
       --font-inter: "Inter", sans-serif;
 }
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll offset to account for fixed navbar */
+section[id] {
+  scroll-margin-top: 100px;
+}
