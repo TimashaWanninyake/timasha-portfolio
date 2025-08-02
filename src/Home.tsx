@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
-import myImage from "../public/myimg.png"
+import myImage from "../public/Timasha.jpg"
 import { BsArrowUpRight } from "react-icons/bs";
 import cv from '../public/Timasha Wanninayaka.pdf'
 
@@ -50,7 +50,7 @@ const Home = () => {
               <img
                 src={myImage}
                 alt="Timasha Wanninayaka"
-                className="w-[200px] md:w-[260px] lg:w-[280px] xl:w-[500px] max-w-full h-auto"
+                className="w-[200px] h-[200px] md:w-[260px] md:h-[260px] lg:w-[280px] lg:h-[280px] xl:w-[500px] xl:h-[500px] rounded-full object-cover"
               />
             </div>
           </div>
