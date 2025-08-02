@@ -154,11 +154,16 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <FiPhone className="text-[#ce4646] text-base md:text-xl lg:text-lg" />
-                <span className="text-xs md:text-base lg:text-base">+94 77 123 4567</span>
+                <a 
+                  href="tel:+94742791417" 
+                  className="text-xs md:text-base lg:text-base hover:text-[#ce4646] transition-colors"
+                >
+                  +94 74 279 1417
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <FiMapPin className="text-[#ce4646] text-base md:text-xl lg:text-lg" />
-                <span className="text-xs md:text-base lg:text-base">Colombo, Sri Lanka</span>
+                <span className="text-xs md:text-base lg:text-base">Kaluthara, Sri Lanka</span>
               </div>
             </div>
           </div>
