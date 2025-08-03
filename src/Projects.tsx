@@ -104,7 +104,7 @@ const Projects = () => {
                 <ul className="mb-10 space-y-3 opacity-90">
                   {project.features.map((feature, index) => (
                     <li key={index} className="flex items-start">
-                      <span className="text-[#ce4646] mr-2 mt-1 flex-shrink-0">✓</span>
+                      <span className="text-[#ce4646] mr-2 mt-0.5 flex-shrink-0 leading-none">✓</span>
                       <span className="text-[#343434] text-xs md:text-sm lg:text-base -mb-2">{feature}</span>
                     </li>
                   ))}
