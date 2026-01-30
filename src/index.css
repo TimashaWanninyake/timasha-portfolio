@@ -14,5 +14,19 @@ html {
 
 /* Scroll offset to account for fixed navbar */
 section[id] {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 20px;
+}
+
+/* Tablet view - smaller fixed navbar */
+@media (min-width: 768px) {
+  section[id] {
+    scroll-margin-top: 70px;
+  }
+}
+
+/* Desktop view - larger fixed navbar */
+@media (min-width: 1024px) {
+  section[id] {
+    scroll-margin-top: 100px;
+  }
 }

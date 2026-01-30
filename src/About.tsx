@@ -25,9 +25,9 @@ const About = () => {
             {/* Desktop Layout - with special handling for 1024px+ */}
             <div className="hidden md:block">
               <h1 className="md:text-xl lg:text-xl xl:text-2xl leading-relaxed">
-                Full-Stack <span className="bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent">Developer</span> | UI/UX Explorer | 
+                Software <span className="bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent">Developer</span> | Aspiring Python Developer | 
                 <span className="lg:block lg:mt-2">
-                  <span className="bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent">Data Science Enthusiast</span>
+                  <span className="bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent"> AI & ML Enthusiast</span>
                 </span>
               </h1><br />
             </div>
@@ -62,6 +62,8 @@ const About = () => {
                 <div className="text-center group">
                   <h4 className="text-sm md:text-base font-semibold bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent mb-3">Backend</h4>
                   <div className="space-y-2 text-xs md:text-sm text-[#e7e7e7e4]">
+                    <div className="hover:text-[#ce4646] transition-colors cursor-pointer">FastAPI</div>
+                    <div className="hover:text-[#ce4646] transition-colors cursor-pointer">Django</div>
                     <div className="hover:text-[#ce4646] transition-colors cursor-pointer">Spring Boot</div>
                     <div className="hover:text-[#ce4646] transition-colors cursor-pointer">MySQL</div>
                   </div>

@@ -15,7 +15,7 @@ const Home = () => {
       <div className="flex-1 ml-0 lg:ml-[70px] xl:ml-[100px]">
         <Navbar />
 
-        <div className="pt-24 lg:pt-32 pl-4 md:pl-6 lg:pl-15 bg-[#ffffff] text-[#343434] min-h-screen pb-8 md:pb-16">
+        <div className="pt-8 md:pt-16 lg:pt-32 pl-4 md:pl-6 lg:pl-15 bg-[#ffffff] text-[#343434] min-h-screen pb-8 md:pb-16">
           <div className="flex justify-center items-center flex-col lg:flex-row px-4 md:px-6">
             <motion.div
               variants={fadeIn("up", 0.5)}
