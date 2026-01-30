@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
-import myImage from "../public/Timasha.jpg"
+import myImage from "../public/Timasha.jpeg"
 import { BsArrowUpRight } from "react-icons/bs";
 import cv from '../public/Timasha Wanninayaka.pdf'
 
