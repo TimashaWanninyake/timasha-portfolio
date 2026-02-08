@@ -16,9 +16,9 @@ const About = () => {
             {/* Mobile Layout - Line by Line */}
             <div className="block md:hidden">
               <h1 className="text-base leading-relaxed">
-                <span className="bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent">Full-Stack Developer</span><br />
-                <span className="bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent">UI/UX Explorer</span><br />
-                <span className="bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent">Data Science Enthusiast</span>
+                <span className="bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent">Software Developer</span><br />
+                <span className="bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent"> Aspiring Python Developer</span><br />
+                <span className="bg-gradient-to-r from-[#d60505] to-[#FF6347] bg-clip-text text-transparent">AI & ML Enthusiast</span>
               </h1><br />
             </div>
             
