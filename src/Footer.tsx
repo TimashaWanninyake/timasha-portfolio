@@ -150,7 +150,12 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <FiMail className="text-[#ce4646] text-base md:text-xl lg:text-lg" />
-                <span className="text-xs md:text-base lg:text-base">timashawanninayaka26@gmail.com</span>
+                <a 
+                  href="mailto:timashawanninayaka26@gmail.com" 
+                  className="text-xs md:text-base lg:text-base hover:text-[#ce4646] transition-colors"
+                >
+                  timashawanninayaka26@gmail.com
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <FiPhone className="text-[#ce4646] text-base md:text-xl lg:text-lg" />
@@ -163,7 +168,14 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <FiMapPin className="text-[#ce4646] text-base md:text-xl lg:text-lg" />
-                <span className="text-xs md:text-base lg:text-base">Kaluthara, Sri Lanka</span>
+                <a 
+                  href="https://maps.google.com/?q=Kaluthara,+Sri+Lanka" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-xs md:text-base lg:text-base hover:text-[#ce4646] transition-colors"
+                >
+                  Kaluthara, Sri Lanka
+                </a>
               </div>
             </div>
           </div>

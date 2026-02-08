@@ -19,22 +19,6 @@ const Projects = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "EXAM Management System ✨",
-      description: "EMS is a secure, efficient, and streamlined Exam Management System tailored for the Department of Computer Science.It addresses critical inefficiencies in manual exam processes, such as paper setting, moderation, grading, and data security, by introducing a unified digital solution.",
-      tags: ["React", "TypeScript", "Tailwind CSS", "Spring Boot", "MySQL", "AES"],
-      githubLink: "https://github.com/uditha2001/EMS",
-      media: EMSVideo,
-      mediaType: "image",
-      features: [
-        "Role-based access control for admins, lecturers, and moderators",
-        "Automated grading and result generation to reduce errors and delays",
-        "Secure workflows with Spring Security and AES encryption for sensitive data",
-        "Historical exam data archival for easy access and analysis",
-        "Feedback and analytics to continuously improve exam quality"
-      ]
-    },
-    {
-      id: 2,
       title: "Elephant Management System! 🐘✨",
       description: "As part of a six-member team, we designed and developed this system during our second year to streamline the management and monitoring of elephants within a specified environment.",
       tags: ["Java", "Java Swing", "PHP", "MySQL"],
@@ -49,7 +33,7 @@ const Projects = () => {
       ]
     },
     {
-      id: 3,
+      id: 2,
       title: "Elephant Management System Website 🐘✨",
       description: "A user-friendly website complementing the Elephant Management System, developed by a team of six with focus on accessibility and visual appeal.",
       tags: ["HTML", "CSS", "PHP", "MySQL", "Figma"],
@@ -63,7 +47,7 @@ const Projects = () => {
       ]
     },
     {
-      id: 4,
+      id: 3,
       title: "Uni Jobs ✨",
       description: "Connecting university students with part-time and one-day job opportunities. Designed with students' flexibility and employers' needs in mind, the system offers a seamless user experience backed by robust functionality.",
       tags: ["HTML", "Tailwind CSS", "PHP", "Figma"],
@@ -76,7 +60,23 @@ const Projects = () => {
         "Advanced filtering and smart suggestions to match students with the right opportunities",
         "Rating and review system for better job quality assurance"
       ]
-    }
+    },
+    {
+      id: 4,
+      title: "EXAM Management System ✨",
+      description: "EMS is a secure, efficient, and streamlined Exam Management System tailored for the Department of Computer Science.It addresses critical inefficiencies in manual exam processes, such as paper setting, moderation, grading, and data security, by introducing a unified digital solution.",
+      tags: ["React", "TypeScript", "Tailwind CSS", "Spring Boot", "MySQL", "AES"],
+      githubLink: "https://github.com/uditha2001/EMS",
+      media: EMSVideo,
+      mediaType: "image",
+      features: [
+        "Role-based access control for admins, lecturers, and moderators",
+        "Automated grading and result generation to reduce errors and delays",
+        "Secure workflows with Spring Security and AES encryption for sensitive data",
+        "Historical exam data archival for easy access and analysis",
+        "Feedback and analytics to continuously improve exam quality"
+      ]
+    },
   ];
 
   return (
@@ -87,10 +87,10 @@ const Projects = () => {
         </h1>
 
         <div className="space-y-12 lg:space-y-16">
-          {projects.map((project) => (
+          {projects.slice().reverse().map((project, index) => (
             <div 
               key={project.id}
-              className={`flex flex-col ${project.id % 2 === 1 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 lg:gap-12 items-center`}
+              className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 lg:gap-12 items-center`}
             >
               {/* Project Details */}
               <div className="flex-1 px-2 md:px-4 mb-8 lg:mb-34">
